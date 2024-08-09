@@ -1,10 +1,23 @@
 import { SafeAreaView, Text, View } from 'react-native';
+import IntroScreen from './src/components/IntroScreen';
+import { useState } from 'react';
+import MainScreen from './src/components/MainScreen';
 
 export default function App() {
+
+  const [isLoaded , setIsLoaded] = useState(false)
+
+  setTimeout(() => {
+   setIsLoaded(true)
+  }, 2000)
+  
   return (
     <SafeAreaView>
       <View>
-        <Text className="text-center mt-10 font-bold text-2xl" >Hello World!!</Text>
+       {
+        isLoaded ? <MainScreen/> : <IntroScreen/>
+       }
+       
       </View>
     </SafeAreaView>
   );

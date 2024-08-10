@@ -24,7 +24,7 @@ module.exports = {
     },
     main_screen_keypad: {
         width: "100%",
-        height: "75%",
+        height: "65%",
         display: "flex",
     },
     main_screen_keypad_row: {
@@ -36,8 +36,8 @@ module.exports = {
         padding: 10,
     },
     btn_outer: {
-        width: 90,
-        height: 90,
+        width: 70,
+        height: 70,
         backgroundColor: "#808D7C",
         elevation: 10,
         borderRadius:10,
@@ -45,8 +45,8 @@ module.exports = {
         justifyContent:'center',
     },
     btn1_outer:{
-        width:90,
-        height:90,
+        width:70,
+        height:70,
         backgroundColor:'#5F6F65',
         borderRadius:50,
         elevation:10,
@@ -56,11 +56,11 @@ module.exports = {
     },
     bg1_button:{
         color:"white",
-        fontSize:20,
+        fontSize:30,
     },
     bg2_button:{
         color:"white",
-        fontSize:20,
+        fontSize:30,
       
        
     },
